@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App Simple snapshot of the App, now loading FlatList, and not render 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ecf0f1",
+      "flex": 1,
+      "justifyContent": "center",
+      "padding": 8,
+      "paddingTop": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 18,
+        "fontWeight": "bold",
+        "margin": 24,
+        "textAlign": "center",
+      }
+    }
+    testID="header"
+  >
+    After this text, we should have the FlatList with the Projects
+  </Text>
+</View>
+`;

@@ -1,0 +1,102 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "parser": "babel-eslint",
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true,
+      "classes": true
+    }
+  },
+  "globals": {
+    "__DEV__": true
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jasmine": true,
+    "node": true,
+    "jquery": true,
+    "jest": true
+  },
+  "rules": {
+    "no-unused-vars": [
+      1,
+      {
+        "argsIgnorePattern": "obj|context|args|props|res|next|^err"
+      }
+    ],
+    "global-require": 0,
+    "arrow-body-style": [2, "as-needed"],
+    "no-param-reassign": [2, { "props": false }],
+    "no-console": 0,
+    "import": 0,
+    "func-names": 0,
+    "space-before-function-paren": 0,
+    "max-len": ["error", 100, 2],
+    "no_underscore-dangle": 0,
+    "consistent-return": 0,
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline",
+        "imports": "only-multiline",
+        "exports": "only-multiline",
+        "functions": "only-multiline"
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "array-bracket-spacing": 0,
+    "space-in-parens": 2,
+    "prefer-arrow-callback": 0,
+    "no-plusplus": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-underscore-dangle": 0,
+    "react/forbid-prop-types": 0,
+    "react/prop-types": [1],
+    "class-methods-use-this": 1,
+    "import/extensions": 0,
+    "react/display-name": 1,
+    "react/react-in-jsx-scope": 0,
+    "react/no-unescaped-entities": 0,
+    "radix": 0,
+    "no-shadow": [
+      2,
+      {
+        "hoist": "all",
+        "allow": ["resolve", "reject", "done", "next", "err", "error"]
+      }
+    ],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 100
+      }
+    ],
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "warn",
+      {
+        "aspects": ["invalidHref"]
+      }
+    ],
+    "jsx-a11y/label-has-for": 0,
+    "no-use-before-define": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/no-multi-comp": 0,
+    "react/prefer-stateless-function": 0
+  }
+}
